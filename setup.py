@@ -4,11 +4,11 @@
 
 from setuptools import setup, find_packages
 
-with open('README.rst') as readme_file:
+with open('README.md') as readme_file:
     readme = readme_file.read()
 
-with open('HISTORY.rst') as history_file:
-    history = history_file.read()
+# with open('HISTORY.rst') as history_file:
+#     history = history_file.read()
 
 requirements = [ ]
 
@@ -36,7 +36,7 @@ setup(
     },
     install_requires=requirements,
     license="MIT license",
-    long_description=readme + '\n\n' + history,
+    long_description=readme + '\n\n',
     include_package_data=True,
     keywords='dicy',
     name='dicy',
@@ -44,6 +44,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/M-Farag/dicy',
-    version='0.0.1',
+    version='0.0.2',
     zip_safe=False,
 )
